@@ -25,3 +25,13 @@ cabal.project.local~
 # IDE
 .idea
 *.iml
+
+# Build
+*.o
+*.hi
+
+# Specific builds
+mapList
+mapComposition
+mapMaybe
+maptest1

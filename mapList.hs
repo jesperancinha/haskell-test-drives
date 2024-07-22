@@ -14,6 +14,7 @@ main = do
     print (fmap addOne (Just 5))
     print (fmap addOne Nothing)
     print (fmap square [1, 2, 3, 4, 5])
+    print ([1,2,3,4,5])
     print (fmap double (Box 10))
 double :: Int -> Int
 double x = x * 2
