@@ -34,7 +34,10 @@ cabal.project.local~
 functors/mapList
 functors/mapComposition
 functors/mapMaybe
-maptest1
+functors/maptest1
 functors/mapCustom
 functors/mapEither
 functors/mapFunction
+functors/mapTree
+functors/mapIO
+functors/mapContainers
