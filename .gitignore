@@ -31,9 +31,10 @@ cabal.project.local~
 *.hi
 
 # Specific builds
-mapList
-mapComposition
-mapMaybe
+functors/mapList
+functors/mapComposition
+functors/mapMaybe
 maptest1
-mapCustom
-mapEither
+functors/mapCustom
+functors/mapEither
+functors/mapFunction
