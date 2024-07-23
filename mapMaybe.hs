@@ -11,3 +11,4 @@ main :: IO ()
 main = do
     print maybeResult1
     print maybeResult2
+    print (fmap increment ([1,2,3,4,5]))

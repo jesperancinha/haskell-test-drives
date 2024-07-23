@@ -6,8 +6,10 @@ instance Functor Box where
 double :: Int -> Int
 double x = x * 2
 
-result4 :: Box Int
-result4 = fmap double (Box 10)
+customResult :: Box Int
+customResult = fmap double (Box 10)
 
 main :: IO ()
-main = print result4
+main = do
+  print customResult
+  print (fmap double [1,2,3,4,5])
