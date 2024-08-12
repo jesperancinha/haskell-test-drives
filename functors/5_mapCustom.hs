@@ -12,4 +12,5 @@ customResult = fmap double (Box 10)
 main :: IO ()
 main = do
   print customResult
+  print (fmap double customResult)
   print (fmap double [1,2,3,4,5])
