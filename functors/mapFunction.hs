@@ -1,11 +1,8 @@
---instance Functor ((->) r) where
---    fmap = (.)
-
 main :: IO ()
 main = do
-  let f = (*2)
-  let g = (+3)
-  let h = fmap f g
+  let byTwo = (*2)
+  let plusThree = (+3)
+  let plusTreeByTwo= fmap byTwo plusThree
   print 10
---  print $ h 10
---  print (h ([1,2,3]))
+  print $ plusTreeByTwo 10
+  print (fmap plusTreeByTwo [1,2,3])
