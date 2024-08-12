@@ -31,6 +31,13 @@ cabal.project.local~
 *.hi
 
 # Specific builds
-functors/*
-functors/!*/
-functors/!*.*
+functors/1_mapList
+functors/2_mapFunction
+functors/3_mapEither
+functors/4_mapIO
+functors/5_mapCustom
+functors/6_mapComposition
+functors/7_mapContainers
+functors/8_mapTree
+functors/9_mapMaybe
+functors/10_mapMaybe
