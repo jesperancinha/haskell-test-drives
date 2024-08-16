@@ -41,3 +41,12 @@ functors/7_mapContainers
 functors/8_mapTree
 functors/9_mapMaybe
 functors/10_mapMaybe
+functors/mapComposition
+functors/mapContainers
+functors/mapCustom
+functors/mapEither
+functors/mapFunction
+functors/mapIO
+functors/mapList
+functors/mapMaybe
+functors/mapTree
