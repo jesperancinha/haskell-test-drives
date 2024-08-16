@@ -1,13 +1,13 @@
-data Box a = Box a deriving (Show)
+data SafeVault a = SafeVault a deriving (Show)
 
-instance Functor Box where
-    fmap f (Box x) = Box (f x)
+instance Functor SafeVault where
+    fmap f (SafeVault x) = SafeVault (f x)
 
 double :: Int -> Int
 double x = x * 2
 
-customResult :: Box Int
-customResult = fmap double (Box 10)
+customResult :: SafeVault Int
+customResult = fmap double (SafeVault 10)
 
 main :: IO ()
 main = do

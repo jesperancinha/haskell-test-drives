@@ -1,5 +1,3 @@
-import Data.Array
-
 increment :: Int -> Int
 increment x = x + 1
 
@@ -16,4 +14,4 @@ main :: IO ()
 main = do
   print compositionMaybeResult1
   print compositionListResult1
-  print (fmap (square . increment) [1,2,3,4,5])
+  print (fmap (square . increment) compositionListResult1)
