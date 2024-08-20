@@ -8,3 +8,6 @@ main = do
     print $ mapOfNumbers
     print $ fmap (++ "z") mapOfStrings
     print $ fmap (+ 1) mapOfNumbers
+    let mapOfNumber2 = fmap (+ 1) mapOfNumbers
+    print $ fmap (+ 2) mapOfNumber2
+

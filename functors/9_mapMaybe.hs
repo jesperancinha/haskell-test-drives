@@ -12,3 +12,5 @@ main = do
     print maybeResult1
     print maybeResult2
     print (fmap increment ([1,2,3,4,5]))
+    let maybeResult3 = fmap (+2) maybeResult1
+    print maybeResult3

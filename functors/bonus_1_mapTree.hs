@@ -7,13 +7,13 @@ instance Functor Tree where
 
 buildTree :: IO (Tree Int)
 buildTree = do
-    putStrLn "Enter value for the root:"
-    rootValue <- readLn
-    putStrLn "Enter value for the left leaf:"
-    leftValue <- readLn
-    putStrLn "Enter value for the right leaf:"
-    rightValue <- readLn
-    let tree = Node (Leaf leftValue) (Node (Leaf rootValue) (Leaf rightValue))
+    putStrLn "Enter value for the left node leaf:"
+    leftNodeLeftLeafValue <- readLn
+    putStrLn "Enter value for the right node left leaf:"
+    rightNodeLeftLeafValue <- readLn
+    putStrLn "Enter value for the right node right leaf:"
+    rightNodeRightLeafValue <- readLn
+    let tree = Node (Leaf leftNodeLeftLeafValue) (Node (Leaf rightNodeLeftLeafValue) (Leaf rightNodeRightLeafValue))
     return tree
 
 main :: IO ()

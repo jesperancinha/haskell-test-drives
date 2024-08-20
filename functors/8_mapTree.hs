@@ -9,3 +9,6 @@ main :: IO ()
 main = do
     let tree = Node (Leaf 1) (Leaf 2)
     print $ fmap (+1) tree
+    let tree2 = fmap (+3) tree
+    print $ fmap (+1) tree2
+
