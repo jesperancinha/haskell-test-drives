@@ -50,3 +50,4 @@ functors/mapIO
 functors/mapList
 functors/mapMaybe
 functors/mapTree
+functors/bonus_1_mapTree

@@ -26,3 +26,5 @@ main = do
     let updatedTree = fmap (+num) tree
     putStrLn "Updated tree:"
     print updatedTree
+    let nextTree = fmap (+5) updatedTree
+    print nextTree
