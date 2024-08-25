@@ -26,10 +26,6 @@ cabal.project.local~
 .idea
 *.iml
 
-# Build
-*.o
-*.hi
-
 # Specific builds
 functors/1_mapList
 functors/2_mapFunction
