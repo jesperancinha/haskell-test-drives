@@ -1,4 +1,5 @@
-build-all:
+build-all: clean-all
+	ls *.hs | xargs -I {} ghc {}
 
 clean-all:
 	ls -I '*.*' functors | grep -v "Makefile" | xargs -I {} rm functors/{}
