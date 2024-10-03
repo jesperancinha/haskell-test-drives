@@ -47,3 +47,4 @@ functors/mapList
 functors/mapMaybe
 functors/mapTree
 functors/bonus_1_mapTree
+monoids/1_monoid_example
