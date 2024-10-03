@@ -34,3 +34,5 @@ main = do
   putStrLn $ "Character with empty 2: " ++ show combinedCharacter2WithEmpty
   putStrLn $ "Combined Character: " ++ show combinedCharacter
   putStrLn $ "Empty Character (mempty): " ++ show emptyCharacter
+  putStrLn $ "Associativity 1: " ++ show ((character1 <> character2) <> character1)
+  putStrLn $ "Associativity 2: " ++ show (character1 <> (character2 <> character1))

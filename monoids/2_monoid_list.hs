@@ -11,3 +11,6 @@ main = do
   putStrLn $ "List 1 with empty: " ++ show list1Empty
   putStrLn $ "List 2 with empty: " ++ show list2Empty
   putStrLn $ "Combined List: " ++ show combinedList
+  putStrLn $ "Identity: " ++ show (mempty :: [Int])
+  putStrLn $ "Associativity 1: " ++ show ((list1 <> list2) <> list1)
+  putStrLn $ "Associativity 2: " ++ show (list1 <> (list2 <> list1))
