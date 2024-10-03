@@ -4,33 +4,33 @@ import GHC.Generics (Generic)
 import Data.Semigroup
 import Data.Monoid
 
-data Person = Person
+data Character = Character
   { name :: String
   , age  :: Int
   } deriving (Show, Generic)
 
-instance Semigroup Person where
-  (<>) (Person "" 0) p2 = p2  -- If first person is empty, return the second
-  (<>) p1 (Person "" 0) = p1  -- If second person is empty, return the first
-  (<>) (Person name1 age1) (Person name2 age2) =
-    Person (name1 <> " & " <> name2) (age1 + age2)
+instance Semigroup Character where
+  (<>) (Character "" 0) p2 = p2
+  (<>) p1 (Character "" 0) = p1
+  (<>) (Character name1 age1) (Character name2 age2) =
+    Character (name1 <> " " <> name2) (age1 + age2)
 
-instance Monoid Person where
-  mempty = Person "" 0
+instance Monoid Character where
+  mempty = Character "" 0
   mappend = (<>)
 
 main :: IO ()
 main = do
-  let person1 = Person "Alice" 30
-      person2 = Person "Bob" 25
-      combinedPerson = person1 <> person2
-      emptyPerson = mempty :: Person
-      combinedPerson1WithEmpty = person1 <> mempty
-      combinedPerson2WithEmpty = mempty <> person2
+  let character1 = Character "The Smith" 2000
+      character2 = Character "Lilith" 1000
+      combinedCharacter = character1 <> character2
+      emptyCharacter = mempty :: Character
+      combinedCharacter1WithEmpty = character1 <> mempty
+      combinedCharacter2WithEmpty = mempty <> character2
 
-  putStrLn $ "Person 1: " ++ show person1
-  putStrLn $ "Person 2: " ++ show person2
-  putStrLn $ "Person with empty 1: " ++ show combinedPerson1WithEmpty
-  putStrLn $ "Person with empty 2: " ++ show combinedPerson2WithEmpty
-  putStrLn $ "Combined Person: " ++ show combinedPerson
-  putStrLn $ "Empty Person (mempty): " ++ show emptyPerson
+  putStrLn $ "Character 1: " ++ show character1
+  putStrLn $ "Character 2: " ++ show character2
+  putStrLn $ "Character with empty 1: " ++ show combinedCharacter1WithEmpty
+  putStrLn $ "Character with empty 2: " ++ show combinedCharacter2WithEmpty
+  putStrLn $ "Combined Character: " ++ show combinedCharacter
+  putStrLn $ "Empty Character (mempty): " ++ show emptyCharacter
