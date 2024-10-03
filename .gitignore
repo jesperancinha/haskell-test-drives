@@ -49,3 +49,8 @@ functors/mapTree
 functors/bonus_1_mapTree
 monoids/1_monoid_example
 monoids/2_monoid_list
+monoids/3_monoid_sum
+monoids/4_monoid_product
+monoids/5_monoid_any
+monoids/6_monoid_all
+monoids/7_monoid_maybe

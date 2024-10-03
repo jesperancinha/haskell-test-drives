@@ -1,5 +1,3 @@
-import Data.Semigroup
-
 main :: IO ()
 main = do
   let list1 = [1, 2, 3]
