@@ -54,3 +54,6 @@ monoids/4_monoid_product
 monoids/5_monoid_any
 monoids/6_monoid_all
 monoids/7_monoid_maybe
+monads/1_monad_list
+monads/2_monads_either
+monads/3_monad_maybe
