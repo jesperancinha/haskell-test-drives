@@ -58,3 +58,5 @@ monads/1_monad_list
 monads/2_monads_either
 monads/3_monad_maybe
 monads/4_monad_return
+monads/5_monad_custom
+
