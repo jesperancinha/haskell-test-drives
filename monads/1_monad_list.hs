@@ -12,10 +12,10 @@ leftIdentityTest a = (return a >>= createTwoElementFunction) == createTwoElement
 rightIdentityTest :: [Int] -> Bool
 rightIdentityTest m = (m >>= return) == m
 
--- Bonus
-
 associativityTest :: [Int] -> Bool
 associativityTest m = ((m >>= createTwoElementFunction) >>= createDoubleElementFunction) == (m >>= (\x -> createTwoElementFunction x >>= createDoubleElementFunction))
+
+-- Bonus
 
 naturalityTest :: (Int -> Int) -> [Int] -> Bool
 naturalityTest f m = fmap f m == (m >>= return . f)
